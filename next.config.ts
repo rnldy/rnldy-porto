@@ -1,8 +1,12 @@
+// Types
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  reactStrictMode: true,
+  images: {
+    unoptimized: true, // Disable default image optimization if needed
+  },
+  output: 'export'
 };
 
 export default nextConfig;
